@@ -31,9 +31,9 @@ router.get("/demo3", function (req, res, next) {
   res.json({
     message: "Lorem ipsum sit dolor amet",
     user: {
-      name: "suyono",
-      email: "suyono@example.com",
-      website: "http://www.suyono.com",
+      name: "irufano",
+      email: "irufano@example.com",
+      website: "http://www.irufano.com",
     },
   });
 });
@@ -68,16 +68,10 @@ router.put("/demo5/", function (req, res, next) {
   });
 });
 
-/* DEMO 5 - menerima request method PUT */
-router.put("/demo5/", function (req, res, next) {
+/* DEMO 6 - menerima request method DELETE */
+router.delete("/demo6/", function (req, res, next) {
   res.json({
-    message: "request PUT is executed",
-    data: {
-      username: req.param("username"),
-      email: req.param("email"),
-      website: req.param("website"),
-      phone: req.param("phone"),
-    },
+    message: "request DELETE is executed",
   });
 });
 
